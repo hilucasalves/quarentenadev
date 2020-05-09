@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora IMC</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Aula 02
+  </h1>
+  <h2>
+    Calculadora de IMC
+  </h2>
+  <h3>
+    O IMC ou índice de massa corporal, nos ajuda a identificar algumas caracteristicas como obesidade ou desnutrição.
+    Abaixo temos uma tabela indicando o significado do valor que você encontrar:
+    <br>
+    <br>
+    Abaixo de 17 - Muito abaixo do peso
+    <br>
+    Entre 17 e 18,49 - Abaixo do peso
+    <br>
+    Entre 18,5 e 24,99 - Peso normal
+    <br>
+    Entre 25 e 29,99 - Acima do peso
+    <br>
+    Entre 30 e 34,99 - Obesidade I
+    <br>
+    Entre 35 e 39,99 - Obesidade II
+    <br>
+    <br>
+    O IMC é calculado dividindo o peso pela altura elevada ao quadrado. Será que você consegue descobrir qual o seu IMC?
+  </h3>
+</body>
+
+</html>
+
+<script type="text/javascript">
+  var peso = prompt("Qual o seu peso?");
+  var altura = prompt("Qual a sua altura?");
+
+  var imc = peso / (altura * altura);
+
+  document.write("O seu IMC é de ", imc.toFixed(2), ". ");
+
+  if (imc <= 17) { document.write("Seu peso está abaixo do normal.") }
+  if (imc >= 18 && imc < 24.99) { document.write("Seu peso está normal.") }
+  if (imc >= 25 && imc < 29.99) { document.write("Seu peso está acima do normal.") }
+  if (imc >= 30 && imc < 34.99) { document.write("Você está com obesidade I.") }
+  if (imc >= 35) { document.write("Você está com obesidade II.") }
+</script>

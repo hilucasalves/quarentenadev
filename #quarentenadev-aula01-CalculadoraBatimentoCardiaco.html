@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora de Batimentos Cardíacos</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Aula 01
+  </h1>
+  <h2>
+    Calculadora de batimentos cardíacos
+  </h2>
+  <h3>
+    O nosso coração bate uma média de 75 vezes por minuto aproximadamente. Sabemos que 1 hora tem 60 minutos. Com essa
+    informação conseguimos descobrir quantas batidas por hora o coração dá.
+
+    Agora que sabemos as batidas por hora, conseguimos saber quantas batidas ele da por dia já que sabemos quantas horas
+    tem o dia.
+
+    Com a informação da quantidade de batida que o coração da por dia, conseguimos calcular quantas batidas o coração da
+    por ano já que sabemos quantos dias o ano tem. Agora é só calcular quanto o coração já bateu durante toda nossa
+    vida. Terminou esse desafio? Então aqui tem mais alguns para você praticar.
+  </h3>
+</body>
+
+</html>
+<script type="text/javascript">
+  var qtdBatimento = 75;
+  var batimentoHora = qtdBatimento * 60;
+  var batimentoDia = batimentoHora * 24;
+  var batimentoAno = batimentoDia * 365;
+  var idade = prompt("Qual a sua idade?");
+  var batimentoVida = batimentoAno * idade;
+
+  document.write("O seu coração bateu ", batimentoVida, " durante ", idade, " anos.");
+</script>

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Botão de Curtida</title>
+  <style>
+    html {
+      background-color: #385596;
+    }
+
+    /*body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }*/
+
+    button {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/df/Facebook_logo_thumbs_up_like_transparent_SVG.svg);
+      background-color: #e7e9f1;
+      color: #385596;
+      background-size: 50px;
+      background-position: 20px 25%;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 59px;
+      font-size: 20px;
+      border: 1px solid #a8b4c9;
+      text-align: center;
+      text-indent: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Aula 08
+  </h1>
+  <h2>
+    Botão de Curtida
+  </h2>
+  <button id="botao" onclick="adicionarLike()">0 Likes </button>
+</body>
+
+</html>
+
+<script>
+  var qtdLike = 0;
+
+  function adicionarLike() {
+    qtdLike++;
+    botao.innerHTML = qtdLike + " Likes";
+    if (qtdLike == 1) {
+      botao.innerHTML = qtdLike + " Like";
+    }
+  }
+</script>

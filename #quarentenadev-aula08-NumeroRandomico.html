@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Número Randômico</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #add8e6;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Aula 08
+	</h1>
+	<h2>
+		Número Randômico
+    </h2>
+    <h3>
+        Consegue descobrir uma outra fórmula de aleatoriedade que seja mais "justa" que a que usamos no exercício?
+    </h3>
+</body>
+
+</html>
+
+
+<script>
+Usando Math.round(Math.random()) o 0.4 arrendonda pra 0, 9.6 arredonda pra 10. Então pra sortear 0 so se for entre 0 e 0.5. pra sortear 10 so se for de 9.5 pra 10. Mas pra outros numeros, como 7, vale de 6.5 a 7.5.
+
+Uma solução mais "justa" seria utilizar a função Math.floor(Math.random) pois ela retorna o menor número inteiro dentre o número "x".
+
+Math.floor( 45.95); //  45
+</script>

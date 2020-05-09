@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora de Combustível</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Aula 03
+  </h1>
+  <h2>
+    Quantidade de combustível gasto em viagem
+  </h2>
+  <h3>
+    O carro da Amanda faz 12km/l, ela viajou por 10 horas a uma velocidade de 81km/h. Quantos de litros combustível
+    foram necessários para realizar essa viagem?
+  </h3>
+</body>
+
+</html>
+<script type="text/javascript">
+  var gastoKm = 12;
+  var tempo = 10;
+  var velocidade = 81;
+
+  var qtdCombustivel = velocidade * (tempo / gastoKm);
+
+  document.write("Amanda gastou um total de " + qtdCombustivel + " litros")
+</script>

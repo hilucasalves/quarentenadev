@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Olimpiadas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Aula 08
+  </h1>
+  <h2>
+    Olimpiadas
+  </h2>
+  <h3>
+    Quantas olimpiadas tivemos até hoje?
+  </h3>
+</body>
+
+</html>
+
+<script>
+  primeiraOlimpiada = 1896;
+  anoAtual = parseInt(prompt("Em que ano estamos?"));
+
+  while (primeiraOlimpiada <= anoAtual) {
+    document.write('Em ' + primeiraOlimpiada + " teve olimpiadas!" + '<br>');
+    primeiraOlimpiada = primeiraOlimpiada + 4
+  }
+</script>

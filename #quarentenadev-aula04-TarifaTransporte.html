@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tarifa de Transporte</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #add8e6;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Aula 04
+	</h1>
+	<h2>
+		Tarifa de Transporte
+	</h2>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	//2 + distancia-km * 1,4 + tempo-min * 0,26
+	
+	var distanciaKm = prompt("Informe a distância percorrida em Km: ");
+
+	var tempoMin = prompt("Informe o tempo da viagem em minutos: ");
+
+	var valorCorrida = 2 + (distanciaKm * 1.4) + (tempoMin * 0.26);
+
+	document.write("<body style=background-color:green;>" + "<h1>Sua corrida deu R$: </h1>" + "<h2>" + valorCorrida.toFixed(2) + "</h2>" + "</body>")
+</script>
